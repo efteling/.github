@@ -1,3 +1,1 @@
-# Efteling: World of Wonders
-
-https://wwww.efteling.com
+<p align="center"><a href="https://www.efteling.com" target="_blank"><img src="https://user-images.githubusercontent.com/5904128/200119853-3ac3f039-cbb6-4448-a681-ca8ba7030e99.jpg" alt="Efteling" width="600"></a></p>
