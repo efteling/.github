@@ -1,3 +1,3 @@
 # .github
 
-Organization wide settings, workflows and templates.
+Organization-wide GitHub configuration.
