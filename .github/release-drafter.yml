@@ -13,8 +13,8 @@ categories:
     labels: 
       - maintenance
       - chore
-change-template: - $TITLE @$AUTHOR (#$NUMBER)
-change-title-escapes: \<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
+change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
+change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
 autolabeler:
   - label: documentation
     files:
