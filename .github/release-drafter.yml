@@ -1,18 +1,15 @@
-name-template: v$RESOLVED_VERSION
-tag-template: v$RESOLVED_VERSION
+name-template: 'v$RESOLVED_VERSION'
+tag-template: 'v$RESOLVED_VERSION'
 categories:
-  - title: 🚀 Features
+  - title: '🚀 Features'
     labels:
-      - enhancement
-      - feature
-  - title: 🐛 Bug Fixes
+      - 'feature'
+  - title: '🐛 Bug Fixes'
     labels:
-      - bug
-      - fix
-  - title: 🧰 Maintenance
-    labels: 
-      - maintenance
-      - chore
+      - 'fix'
+  - title: '🧰 Maintenance'
+    labels:
+      - 'maintencance'
 change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
 change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
 autolabeler:
@@ -22,7 +19,7 @@ autolabeler:
   - label: fix
     branch:
       - '/fix\/.+/'
-  - label: enhancement
+  - label: feature
     branch:
       - '/feature\/.+/'
   - label: maintenance
@@ -31,15 +28,15 @@ autolabeler:
 version-resolver:
   major:
     labels:
-      - breaking-change
+      - 'breaking-change'
   minor:
     labels:
-      - enhancement
+      - 'feature'
   patch:
     labels:
-      - fix
-      - maintenance
-  default: minor 
+      - 'fix'
+      - 'maintenance'
+  default: minor
 template: |
   ## Changes
 
