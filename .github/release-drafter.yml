@@ -7,9 +7,9 @@ categories:
   - title: '🐛 Bug Fixes'
     labels:
       - 'fix'
-  - title: '🧰 Maintenance'
+  - title: '🧰 Chores'
     labels:
-      - 'maintencance'
+      - 'chore'
 change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
 change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
 autolabeler:
@@ -22,9 +22,12 @@ autolabeler:
   - label: feature
     branch:
       - '/feature\/.+/'
-  - label: maintenance
+  - label: chore
     branch:
-      - '/maintenance\/.+/'
+      - '/chore\/.+/'
+  - label: chore
+    branch:
+      - '/chore\/.+/'
 version-resolver:
   major:
     labels:
