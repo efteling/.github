@@ -12,16 +12,13 @@ categories:
       - chore
 change-template: - $TITLE @$AUTHOR (#$NUMBER)
 change-title-escapes: \<*_& # You can add # and @ to disable mentions, and add ` to disable code blocks.
-autolabeler:
-  - label: patch
-    branch:
-      - /patch\/.+/
+autolabeler:  
   - label: feature
     branch:
       - /feature\/.+/
-  - label: chore
+  - label: patch
     branch:
-      - /chore\/.+/
+      - /patch\/.+/
   - label: chore
     branch:
       - /chore\/.+/
