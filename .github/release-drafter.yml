@@ -1,44 +1,41 @@
-name-template: 'v$RESOLVED_VERSION'
-tag-template: 'v$RESOLVED_VERSION'
+name-template: v$RESOLVED_VERSION
+tag-template: v$RESOLVED_VERSION
 categories:
-  - title: '🚀 Features'
+  - title: 🚀 Features
     labels:
-      - 'feature'
-  - title: '🐛 Bug Fixes'
+      - feature
+  - title: 🐛 Patches
     labels:
-      - 'fix'
-  - title: '🧰 Chores'
+      - patch
+  - title: 🧰 Chores
     labels:
-      - 'chore'
-change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
-change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
+      - chore
+change-template: - $TITLE @$AUTHOR (#$NUMBER)
+change-title-escapes: \<*_& # You can add # and @ to disable mentions, and add ` to disable code blocks.
 autolabeler:
-  - label: documentation
-    files:
-      - '*.md'
-  - label: fix
+  - label: patch
     branch:
-      - '/fix\/.+/'
+      - /patch\/.+/
   - label: feature
     branch:
-      - '/feature\/.+/'
+      - /feature\/.+/
   - label: chore
     branch:
-      - '/chore\/.+/'
+      - /chore\/.+/
   - label: chore
     branch:
-      - '/chore\/.+/'
+      - /chore\/.+/
 version-resolver:
   major:
     labels:
-      - 'breaking-change'
+      - breaking-change
   minor:
     labels:
-      - 'feature'
+      - feature
   patch:
     labels:
-      - 'fix'
-      - 'maintenance'
+      - patch
+      - chore
   default: minor
 template: |
   ## Changes
